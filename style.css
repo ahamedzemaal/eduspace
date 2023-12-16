@@ -1,0 +1,137 @@
+body {
+  background: #ffffff;
+}
+.row {
+  display:block;
+}
+
+.column {
+  display: block;
+}
+nav img {
+  width: 140px;
+  height: 90px;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 2px;
+}
+.line0 {
+  padding: 10px;
+  height: 250px;
+  width: 700px;
+  color: #0c0531;
+  font-family: sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 580;
+  line-height: 100%;
+}
+.container {
+  /* width: 1300px; */
+  height: 450px;
+  flex-shrink: 0;
+  background: #ffffff;
+}
+.container2{
+    height: 95px;
+    background-color: #ffffff;
+}
+/* li {
+    display: inline;
+    float: right;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+} */
+
+.learning {
+  width: 872px;
+  background: linear-gradient(
+    95deg,
+    #45d979 26.15%,
+    rgba(178, 7, 59, 0) 95.75%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 580;
+  line-height: 120%;
+}
+
+.line1 {
+  padding: 10px;
+  height: 60px;
+  margin-top: 60px;
+  background-color: #ffffff;
+  width: 650px;
+  color: #827a7a;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.container3{
+    align-items: center;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 22px;
+    margin: 150px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .five {
+    background-color: #45d979;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .six {
+    background-color: #0c0531;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .seven{
+    background-color: #0c0531;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .eight{
+    background-color: #0c0531;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .two{
+    background-color: #0c0531;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
