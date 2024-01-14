@@ -39,19 +39,23 @@ body {
 }
 
 .head-container {
+  background-color: #f9f7ff;
   display: flex;
   justify-content: center;
   gap: 50px;
   padding: 75px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-left: 20px;
+  margin-right: 20px;
   align-items: center;
 }
 
-.head-container div{
+.head-container div {
   width: 100%;
 }
 
-.head-container img{
+.head-container img {
   border-radius: 10px;
 }
 
@@ -61,20 +65,20 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
-  color:white;
+  color: white;
   border: none;
   background-color: #45d979;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.head-container button:hover{
+.head-container button:hover {
   background-color: white;
   color: #45d979;
 }
 
 .learning {
-  background: linear-gradient(95deg,#45d979 26.15%,rgba(178, 7, 59, 0) 99%);
+  background: linear-gradient(95deg, #45d979 26.15%, rgba(178, 7, 59, 0) 99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,21 +87,71 @@ body {
   line-height: 125%;
 }
 
-.benefits-container{
+.benefits-container {
   display: flex;
   justify-content: center;
   gap: 50px;
-  padding: 75px;
+  padding: 50px;
+  background-color: #1d232c;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/* .beni-side div{
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-top: 10px;
-} */
+.benefits-container div {
+  border-radius: 10px;
+  height: auto;
+}
 
-.beni-side{
+.papers-headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.papers {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.paper-container {
+  background-color: #45d979;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.paper-container p {
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.paper-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.paper-container a:hover {
+  color: white;
+}
+
+.beni-side {
   background-color: #45d979;
   padding: 20px;
+}
+
+@media screen and (max-width:600px){
+  .navbar-menu-toggle{
+      display: block;
+  }
+  .navbar-links{
+      display: none;
+  }
 }
