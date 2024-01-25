@@ -1,163 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eduspace</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Nav Bar -->
-    <nav class="navbar">
-      <img src="Image\logo-no-background.svg" alt=""/>
-
-      <div class="navbar-links">
-        <p class="navbar-link"><a href="">Home</a></p>
-        <p class="navbar-link"><a href="">Collections</a></p>
-        <p class="navbar-link"><a href="">About</a></p>
-      </div>
-
-      <!-- After Minimize Menu Icon -->
-      <div class="navbar-menu-toggle">
-        <i class="fa-solid fa-bars" onclick="showNavbar()"></i>
-      </div>
-    </nav>
-
-    <!-- Side Navbar -->
-    <div class="side-navbar">
-      <p style="text-align: right; cursor: pointer; border: none;">
-        <i class="fa-solid fa-xmark" onclick="closeNavbar()"></i>
-      </p>
-      <div class="side-nav">
-        <img src="Image\logo-no-background.svg" alt="">
-      </div>
-      <hr>
-      <div class="side-navbar-links">
-        <p class="side-navbar-link"><a href="">Home</a></p>
-        <p class="side-navbar-link"><a href="">Collections</a></p>
-        <p class="side-navbar-link"><a href="">About</a></p>
-      </div>
-    </div>
-
+</head>
+<body class="font-sans">
+    <!-- Nav -->
+    <section class="bg-white m-2 filter drop-shadow-md p-5">
+        <div class="container">
+            <div class="flex justify-between">
+                <a class="text-green-500 font-bold text-3xl flex" href=""><img class="mx-2" src="Assets/pic.png" alt="">Eduspace.</a>
+                <div class="my-auto">
+                    <ul class="flex font-bold text-gray-600">
+                        <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">About</a></li>
+                        <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">About</a></li>
+                        <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">About</a></li>
+                        <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">About</a></li>
+                        <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Header -->
-    <div class="head-container">
-      <div class="start1">
-        <h1>Start <span class="learning">learning</span> skill From your favorite mentor</h1>
-        <button>Visit</button>
-      </div>
-
-      <div class="start2">
-        <img class="images-header" src="https://source.unsplash.com/random/300x300/? A man reading books" alt="">
-      </div>
-    </div>
-
-    <!-- Product -->
-    <div class="benefits-container">
-      <div class="beni-side2" >
-        <img src="https://source.unsplash.com/random/400x220/? A man reading books?5" alt="Reading">
-      </div>
-
-      <div class="beni-side">
-        <h2>Benefits from Our Eduspace</h2>
-        <div>
-          <h4><i class="fa-solid fa-book"></i> Past Papers</h4>
+    <section class="bg-gray-100 p-5 m-7 shadow rounded-2xl">
+        <div class="container mx-auto py-12 px-8">
+            <div class="flex">
+                <div class="w-1/2 p-4">
+                    <h2 class="text-6xl font-bold mb-2">Start learning skill From your favorite mentor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vel officiis iure rem rerum eius!</p>
+                    <button class="bg-green-500 px-3 py-2 rounded my-4 hover:bg-white border border-green-500">Explore More</button>
+                </div>
+                <div class="w-1/2 "><img class=" w-3/5 h-8/12 object-fit mx-auto" src="Assets/web3Developer.png" alt="">
+                </div>
+            </div>
         </div>
-        <div>
-          <h4><i class="fa-solid fa-book"></i> Elobrations</h4>
+    </section>
+
+    <!-- Benifits -->
+    <section class="bg-white rounded-2xl shadow p-8 my-8 mx-24">
+        <div class="container ">
+            <div class="flex">
+                <div class="w-1/2 my-auto">
+                    <img class="w-4/6 h-8/12 mx-auto rounded-2xl shadow-2xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                </div>
+                <div class="w-1/2 px-3">
+                    <h2 class="text-3xl font-semibold">Benifits from Our Eduspace.</h2>
+                    <ul class="px-3">
+                        <li class="my-3">
+                            <h3 class="text-xl flex font-bold">Paptpaper</h3>
+                            <p class="text-gray-600 w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, autem.</p>
+                        </li>
+                        <li class="my-3">
+                            <h3 class="text-xl flex font-bold">Elobrations</h3>
+                            <p class="text-gray-600 w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, autem.</p>
+                        </li>
+                        <li class="my-3">
+                            <h3 class="text-xl flex font-bold">Online Tutorials</h3>
+                            <p class="text-gray-600 w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, autem.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-          <h4><i class="fa-solid fa-book"></i> Model Papers</h4>
+    </section>
+
+    <!-- Latest Cards -->
+    <section class="bgray-20000 p-5 m-8 shadow rounded-2xl">
+        <div class=" mb-4">
+            <h2 class="text-3xl font-bold text-center">Latest Past Papers</h2>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, perferendis.</p>
         </div>
-        <div>
-          <h4><i class="fa-solid fa-book"></i> Explanation Videos</h4>
+        <div class="flex flex-wrap px-5 justify-center">
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="papers-headers">
-        <h2>Latest Papers</h2>
-    </div>
+    <!-- Cards -->
+    <section class="bgray-20000 p-5 m-8 shadow rounded-2xl">
+        <div class=" mb-4">
+            <h2 class="text-3xl font-bold text-center">Past Papers</h2>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, perferendis.</p>
+        </div>
+        <div class="flex flex-wrap px-5 justify-center">
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+            <div class="w-1/3 p-5">
+                <div class="w-8/12 h-full bg-gray-200 rounded-xl shadow cursor-pointer hover:bg-green-500">
+                    <img class="rounded-t-xl" src="Assets/7e240aaaf01765c50d5b5a6f7694615e.jpg" alt="">
+                    <h3 class="text-xl font-bold text-center m-3">Designs</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="papers">
-      <div class="paper-container">
-          <img src="https://source.unsplash.com/random/200x200/? school?1" alt="">
-          <!-- <p><a href="">2019 <i class="fa-solid fa-download"></i></a></p> -->
-          <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-      <div class="paper-container">
-        <img src="https://source.unsplash.com/random/200x200/? school?2" alt="">
-        <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-      <div class="paper-container">
-        <img src="https://source.unsplash.com/random/200x200/? school?4" alt="">
-        <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-      <div class="paper-container">
-        <img src="https://source.unsplash.com/random/200x200/? school?3" alt="">
-        <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-    </div>
-
-    <div>
-      <div class="papers-headers">
-        <h2>Upcoming Releases</h2>
-    </div>
-
-    <div class="papers">
-      <div class="paper-container">
-          <img src="https://source.unsplash.com/random/200x200/? school?1" alt="">
-          <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-      <div class="paper-container">
-        <img src="https://source.unsplash.com/random/200x200/? school?2" alt="">
-        <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-      <div class="paper-container">
-        <img src="https://source.unsplash.com/random/200x200/? school?4" alt="">
-        <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-      <div class="paper-container">
-        <img src="https://source.unsplash.com/random/200x200/? school?3" alt="">
-        <button><a href="">2019 GCE A/L </a><i class="fa-solid fa-download"></i></button>
-      </div>
-    </div>
-    </div>
-  
-    <!-- FOOTER -->
-    <div class="footer">
-      <div class="footer-container">
-          <div class="footer-box">
-              <h2 class="headText">Eduspace</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="footer-icon">
-                  <i class="fa-brands fa-instagram" style="color: white;"></i>
-                  <i class="fa-brands fa-twitter" style="color: white;"></i>
-                  <i class="fa-brands fa-whatsapp" style="color: white;"></i>
-              </div>
-          </div>
-      </div>
-      <p>@2023 Copyright</p>
-  </div>
-    <script src="script.js"></script>
-  </body>
+    <!-- Footer -->
+    <section class="bg-gray-100">
+        <div class=" p-10 m-5 flex flex-wrap">
+            <div class="w-1/4">
+                <p class="flex text-xl font-bold text-green-500"><img class=" px-2" src="Assets/pic.png" alt="">Eduspace.</p>
+                <ul class="flex my-2">
+                    <li class="px-3"><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"> <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" /></svg></a></li>
+                    <li class="px-3"><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"> <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.00 127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205- 165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.28 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623- 348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962 797-1.562 2.457-2.549z" />
+                      </svg></a></li>
+                    <li class="px-3"><a href="">Gmail</a></li>
+                </ul>
+            </div>
+            <div class="w-1/4 bg-yellow-400">Test</div>
+            <div class="w-1/4 bg-yellow-500">Test</div>
+            <div class="w-1/4 bg-yellow-600">Test</div>
+        </div>
+    </section>
+</body>
 </html>
