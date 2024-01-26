@@ -4,59 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papers</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    
   </head>
   <body>
-    <!-- Nav Bar -->
-    <nav class="navbar">
-      <img src="Image\logo-no-background.svg" alt=""/>
-
-      <div class="navbar-links">
-        <p class="navbar-link"><a href="">Home</a></p>
-        <p class="navbar-link"><a href="">Collections</a></p>
-        <p class="navbar-link"><a href="">About</a></p>
-      </div>
-
-      <!-- After Minimize Menu Icon -->
-      <div class="navbar-menu-toggle">
-        <i class="fa-solid fa-bars" onclick="showNavbar()"></i>
-      </div>
-    </nav>
-
-    <!-- Side Navbar -->
-    <div class="side-navbar">
-      <p style="text-align: right; cursor: pointer; border: none;">
-        <i class="fa-solid fa-xmark" onclick="closeNavbar()"></i>
-      </p>
-      <div class="side-nav">
-        <img src="Image\logo-no-background.svg" alt="" width="100%">
-      </div>
-      <hr>
-      <div class="side-navbar-links">
-        <p class="side-navbar-link"><a href="">Home</a></p>
-        <p class="side-navbar-link"><a href="">Collections</a></p>
-        <p class="side-navbar-link"><a href="">About</a></p>
-      </div>
+    <!-- Nav -->
+  <section class="bg-white m-2 filter drop-shadow-md p-5">
+    <div class="container">
+        <div class="flex justify-between">
+            <a class="text-green-500 font-bold text-3xl flex" href=""><img class="mx-2" src="Assets/pic.png" alt="">Eduspace.</a>
+            <div class="my-auto">
+                <ul class="hidden md:flex font-bold text-gray-600">
+                    <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">About</a></li>
+                    <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">Past Papers</a></li>
+                    <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">Elaborations</a></li>
+                    <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">Tutorials</a></li>
+                </ul>
+            </div>
+            <!-- Small Devices Menu-->
+            <div class="cursor-pointer md:hidden" onclick="showNavbar()" id="menubtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
     </div>
+  </section>
+
+<!-- Navbar After Minimize -->
+  <section class="m-2 p-2 w-2/3 rounded-b-lg md:hidden" id="sidenav">
+    <div class="cursor-pointer my-2" onclick="closeNavbar()" id="closebtn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>                      
+    </div>
+    <div class="text-left rounded-b-xl shadow-xl bg-gray-100">
+        <ul class="text-gray-600 font-semibold">
+            <li class="px-3 py-1 hover:border border-b-green-500"><a href="">About</a></li>
+            <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Past Papers</a></li>
+            <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Elaborations</a></li>
+            <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Tutorials</a></li>
+        </ul>
+    </div>
+  </section>
 
     <script src="script.js"></script>
   </body>
