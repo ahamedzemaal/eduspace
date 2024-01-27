@@ -11,14 +11,14 @@
 </head>
 <body class="font-sans">
     <!-- Nav -->
-  <section class="bg-white m-2 filter drop-shadow-md p-5">
+    <section class="bg-white m-2 filter drop-shadow-md p-5">
         <div class="container">
             <div class="flex justify-between">
                 <a class="text-green-500 font-bold text-3xl flex" href=""><img class="mx-2" src="Assets/pic.png" alt="">Eduspace.</a>
                 <div class="my-auto">
                     <ul class="hidden md:flex font-bold text-gray-600">
                         <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">About</a></li>
-                        <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="papers.html">Past Papers</a></li>
+                        <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">Past Papers</a></li>
                         <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">Elaborations</a></li>
                         <li class="pr-4"><a class="px-3 py-2 border border-green-100 hover:border-purple-300 rounded"  href="">Tutorials</a></li>
                     </ul>
@@ -30,26 +30,22 @@
                     </svg>
                 </div>
             </div>
-        </div>
+            <!-- Navbar After Minimize -->
+            <section class="m-2 p-2 w-2/3 rounded-b-lg md:hidden" id="sidenav">
+                <div class="cursor-pointer my-2" onclick="closeNavbar()" id="closebtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>                      
+                </div>
+                <div class="text-left rounded-b-xl shadow-xl bg-gray-100">
+                    <ul class="text-gray-600 font-semibold">
+                        <li class="px-3 py-1 hover:border border-b-green-500"><a href="">About</a></li>
+                        <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Past Papers</a></li>
+                        <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Elaborations</a></li>
+                        <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Tutorials</a></li>
+                    </ul>
+                </div>
+        </section>
     </section>
-
-    <!-- Navbar After Minimize -->
-    <section class="m-2 p-2 w-2/3 rounded-b-lg md:hidden" id="sidenav">
-        <div class="cursor-pointer my-2" onclick="closeNavbar()" id="closebtn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-              </svg>                      
-        </div>
-        <div class="text-left rounded-b-xl shadow-xl bg-gray-100">
-            <ul class="text-gray-600 font-semibold">
-                <li class="px-3 py-1 hover:border border-b-green-500"><a href="">About</a></li>
-                <li class="px-3 py-1 hover:border border-b-green-500"><a href="papers.html">Past Papers</a></li>
-                <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Elaborations</a></li>
-                <li class="px-3 py-1 hover:border border-b-green-500"><a href="">Tutorials</a></li>
-            </ul>
-        </div>
-    </section>
-
     <!-- Header -->
     <!-- <section class="bg-gray-100 p-5 m-7 shadow rounded-2xl">
         <div class="container mx-auto py-12 px-8">
